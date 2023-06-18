@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Deploy app
-      uses: sebastianpopp/git-ftp-action@releases/v3
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with: 
         server: "s1.ct8.pl/domains/af-ct8.ct8.pl/public_html/wp-content/themes/moj_szablon"
         user: ${{secrets.FTP_USERNAME}}
